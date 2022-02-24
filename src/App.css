@@ -1,38 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
 .App {
-  text-align: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: hsl(0, 0%, 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.outter-qr-container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(212, 45%, 89%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inner-qr-container {
+	height: 600px;
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.qr {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+	width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.qr-image {
+	height: 350px;
+	width: 350px;
+	border-radius: 10px;
+	margin: 20px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description {
+	padding: 0px 45px 45px 45px;
+}
+
+.first-sentence {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: hsl(218, 44%, 22%);
+	font-size: 25px;
+	font-family: "Outfit", sans-serif;
+	font-weight: bold 700px;
+}
+
+.second-sentence {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: hsl(217, 15%, 56%);
+	font-size: 18px;
+	font-family: "Outfit", sans-serif;
+	font-weight: normal;
+}
+
+@media screen and (max-width: 389px) {
+	.App {
+		width: 100%;
+	}
+
+	.inner-qr-container {
+		height: 540px;
+		width: 300px;
+	}
+
+	.qr {
+		height: 100%;
+		width: 100%;
+	}
+
+	.qr-image {
+		height: 300px;
+		width: 270px;
+	}
+
+	.description {
+		padding: 0px 15px 15px 15px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.first-sentence {
+		font-size: 22px;
+	}
+
+	.second-sentence {
+		font-size: 16px;
+	}
 }
