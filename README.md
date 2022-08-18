@@ -15,10 +15,10 @@ This project was built with the following frame works:
 * [HTML]
 
 
-<!-- CONTACT -->
+
 ## Contact
 Vivianie Price - vivianieprice@gmail.com
 
 
-Acknowledgements
+## Acknowledgements
 frontenmentor.io
