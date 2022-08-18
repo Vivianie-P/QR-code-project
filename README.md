@@ -21,4 +21,4 @@ Vivianie Price - vivianieprice@gmail.com
 
 
 ## Acknowledgements
-frontenmentor.io
+frontendmentor.io
